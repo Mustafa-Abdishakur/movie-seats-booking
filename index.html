@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie seat booking</title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+       <div class="container">
+           <div class="movie-options">
+            <span>Pick a movie: </span>
+            <select class="selected-movie" onchange="controlMovie()">
+                <option value = "Avengers: End game,50" >Avengers: End game(50 Dirhams)</option>
+                <option value = "My little pony,70">My little pony(70 Dirhams)</option>
+                <option value = "Fast and furious 9,40">Fast and furious 9(40 Dirhams)</option>
+                <option value = "The matrix 4,90">The matrix 4(90 Dirhams)</option>
+            </select>
+           </div>
+           <div class="seat-state">
+              <ul>
+                  <li>
+                      <div class="seats seat-empty"></div>
+                      <small>N/A</small>
+                  </li>
+                  <li>
+                    <div class=" seats seat-selected"></div>
+                    <small>Selected</small>
+                </li>
+                  <li>
+                    <div class="seats seat-occupied"></div>
+                    <small>Occupied</small>
+                  </li>
+              </ul>
+
+
+           </div>
+           <div class="screen">
+            <div class="inner-screen"></div>
+
+           </div>
+           <div class="seats-container">
+               <div class="left-seats">
+                    <div class="seats movie-seats" data-id="seat-0"></div>
+                    <div class="seats movie-seats" data-id="seat-1"></div>
+                    <div class="seats movie-seats" data-id="seat-2" ></div> 
+                    <div class="seats movie-seats" data-id="seat-3"> </div>
+                    <div class="seats movie-seats" data-id="seat-4"></div>
+                    <div class="seats movie-seats" data-id="seat-5"></div>
+                    <div class="seats movie-seats" data-id="seat-6"></div>
+                    <div class="seats movie-seats" data-id="seat-7"></div>
+                    <div class="seats movie-seats" data-id="seat-8"></div>
+                    <div class="seats seat-occupied"></div>
+                    <div class="seats movie-seats" data-id="seat-9"></div>
+                    <div class="seats movie-seats" data-id="seat-10"></div>
+               </div>
+               <div class="middle-seats">
+                <div class="seats movie-seats"></div>
+                <div class="seats seat-occupied"></div>
+                <div class="seats movie-seats" data-id="seat-11"></div>
+                <div class="seats movie-seats" data-id="seat-12"></div>
+                <div class="seats movie-seats"data-id="seat-13"></div>
+                <div class="seats movie-seats"data-id="seat-14"></div>
+                <div class="seats movie-seats"data-id="seat-15"></div>
+                <div class="seats movie-seats"data-id="seat-16"></div>
+                <div class="seats movie-seats"data-id="seat-17"></div>
+                <div class="seats movie-seats"data-id="seat-18"></div>
+                <div class="seats seat-occupied"></div>
+                <div class="seats movie-seats"data-id="seat-19"></div>
+                <div class="seats movie-seats"data-id="seat-20"></div>
+                <div class="seats movie-seats"data-id="seat-21"></div>
+                <div class="seats movie-seats"data-id="seat-22"></div>
+                <div class="seats seat-occupied"></div>
+                <div class="seats movie-seats"data-id="seat-23"></div>
+                <div class="seats movie-seats"data-id="seat-24"></div>
+                <div class="seats movie-seats"data-id="seat-25"></div>
+                <div class="seats movie-seats"data-id="seat-26"></div>
+                <div class="seats movie-seats"data-id="seat-27"></div>
+                <div class="seats seat-occupied"></div>
+                <div class="seats seat-occupied"></div>
+                <div class="seats movie-seats"data-id="seat-28"></div>
+
+               </div>
+               <div class="right-seats">
+                    <div class="seats seat-occupied"></div>
+                    <div class="seats movie-seats"data-id="seat-29"></div>
+                    <div class="seats movie-seats"data-id="seat-30"></div>
+                    <div class="seats movie-seats"data-id="seat-31"></div>
+                    <div class="seats movie-seats"data-id="seat-32"></div>
+                    <div class="seats seat-occupied"></div>
+                    <div class="seats movie-seats"data-id="seat-33"></div>
+                    <div class="seats movie-seats"data-id="seat-34"></div>
+                    <div class="seats movie-seats"data-id="seat-35"></div>
+                    <div class="seats movie-seats"data-id="seat-36"></div>
+                    <div class="seats movie-seats"data-id="seat-37"></div>
+                    <div class="seats movie-seats"data-id="seat-38"></div>
+           </div>
+           </div>
+           <p class="statement">You have booked <span id="seats">0</span> seats for total price of <span id="total-price">0</span> dirhams</p>
+        </div>
+    <script src="index.js"></script>
+   </body>
+</html>
