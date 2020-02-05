@@ -84,43 +84,8 @@ DOM.seats.addEventListener('click', event => {
 
 
     }
-//TESIING
-console.log(movies);
+
 });
-
-
-//loading booked seats when reload
-/*window.addEventListener('load', () => {
-
-    //get the movie name, cost and booked seats from storage
-    const movie =JSON.parse(localStorage.getItem('movie'));
-    const movieName = movie.movieName;
-    const movieCost = movie.cost;
-    const seatLocations = movie.seatLocation;
-    const movieAndCost = `${movieName}(${movieCost} Dirhams)`;
-    //toggle the UI (movie name and the  booked seats)
- 
-    const el = document.querySelector(`option[value="${movieName},${movieCost}"`);
-    const markUp = `
-    <option value = "${movieName},${movieCost}" selected>${movieAndCost}</option>
-    `;
-    document.querySelector('.selected-movie').insertAdjacentHTML('afterbegin', markUp);
-    el.parentElement.removeChild(el);
-
-    Array.from(document.querySelectorAll('.movie-seats')).forEach(parentEl =>{
-        seatLocations.forEach(el =>{
-            if(parentEl.dataset.id === `seat-${el}`){
-                parentEl.classList.remove('movie-seats');
-                parentEl.classList.add('active');
-            }
-        })
-    })
-
-
-    //render the UI
- 
-
-});*/
 function controlMovie(event){
     //get the movie, the price and the selected seat
      const theMovie = document.querySelector('.selected-movie').value;
